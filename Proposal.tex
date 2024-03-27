@@ -1,0 +1,249 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+\PassOptionsToPackage{dvipsnames,svgnames,x11names}{xcolor}
+%
+\documentclass[
+  12pt,
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math} % this also loads fontspec
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+\usepackage{lmodern}
+\ifPDFTeX\else
+  % xetex/luatex font selection
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\usepackage[left=1in,right=1in,top=1in,bottom=1in]{geometry}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\usepackage{mathtools}
+\usepackage{amsmath}
+\numberwithin{equation}{section}
+\numberwithin{table}{section}
+\numberwithin{figure}{section}
+\usepackage{float}
+\usepackage{gensymb}
+\usepackage{setspace}\singlespacing
+\usepackage{titlesec}
+\titlespacing*{\section}{0pt}{2cm}{0.5cm}
+\titlespacing*{\subsection}{0pt}{1cm}{1cm}
+\usepackage[nottoc]{tocbibind}
+\setcounter{tocdepth}{2}
+\widowpenalties 3 10000 10000 150
+\displaywidowpenalties 3 10000 10000 150
+\clubpenalties 3 10000 10000 150
+\interfootnotelinepenalty 5000
+\raggedbottom
+\usepackage{enumitem}
+\setlist{itemsep=3pt,topsep=5pt,parsep=0pt,partopsep=0pt}
+\usepackage{marvosym}
+\usepackage{hyperref}
+\hypersetup{bookmarksnumbered=true}
+\usepackage{bookmark}
+\let\Begin\begin
+\let\End\end
+\newcommand{\Newrow}{\\}
+\addtolength{\skip\footins}{2pc plus 5pt}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+\usepackage[]{natbib}
+\bibliographystyle{agsm}
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\urlstyle{same}
+\hypersetup{
+  pdfauthor={Johann-Friedrich Salzmann},
+  colorlinks=true,
+  linkcolor={MidnightBlue},
+  filecolor={Maroon},
+  citecolor={MidnightBlue},
+  urlcolor={MidnightBlue},
+  pdfcreator={LaTeX via pandoc}}
+
+\title{Opinion Dynamics, Social Tipping Processes,\\
+Public Opinion Change}
+\usepackage{etoolbox}
+\makeatletter
+\providecommand{\subtitle}[1]{% add subtitle to \maketitle
+  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
+}
+\makeatother
+\subtitle{\emph{Draft Proposal: Master Thesis \& PhD Project}}
+\author{Johann-Friedrich Salzmann
+\href{mailto:mail@jfsalzmann.com}{\Letter}\\
+\footnotesize Hertie School of Governance, Berlin}
+\date{}
+
+\begin{document}
+\maketitle
+
+\renewcommand{\harvardand}{\&}
+\setcitestyle{authoryear,round,aysep={},notesep={: }}
+
+\nocite{Bak-Coleman2022,Chatzilena2019,Sooknanan2016,Winkelmann2022}
+
+\hypertarget{theoretical-framework}{%
+\subsubsection{Theoretical Framework}\label{theoretical-framework}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Opinion Dynamics}: Opinion Diffusion, Social Contagion
+\item
+  \textbf{Social Tipping Processes}/Dynamics
+\item
+  \textbf{Social Movements}/Change, Collective Action
+\item
+  \textbf{Public Opinion} Formation, Preference Aggregation, Spread of
+  Misinformation
+\end{itemize}
+
+\hypertarget{methodology}{%
+\subsubsection{Methodology}\label{methodology}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Modelling}: Compartment Models, Network Models
+\item
+  \textbf{Inference}: Bayesian Generative Models
+\item
+  \textbf{Causal Identification}: Causal Design (DAGs), Causal Bayesian
+  Inference
+\end{itemize}
+
+\hypertarget{implementation}{%
+\subsubsection{Implementation}\label{implementation}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{STAN} as PPL for Bayesian Inference
+\item
+  \textbf{R} for Data Pre-Processing \& Analysis
+\end{itemize}
+
+\hypertarget{central-research-questions}{%
+\subsubsection{Central Research
+Questions}\label{central-research-questions}}
+
+\begin{itemize}
+\tightlist
+\item
+  How well, and how fast, does a certain piece of information spread
+  through a population?
+\item
+  What thresholds need to be crossed so that a social tipping process of
+  opinion diffusion takes off?
+\item
+  What is the set of necessary conditions for a piece of information to
+  be (decently) contagious?
+\end{itemize}
+
+\hypertarget{working-hypotheses}{%
+\subsubsection{Working Hypotheses}\label{working-hypotheses}}
+
+\begin{itemize}
+\tightlist
+\item
+  Model parameters a) can be interpreted in a meaningful way (tbd), and
+  b) in any case, they can be compared case-to-case
+\item
+  SIR-like dynamics c) underlay or d) meaningfully represent, and e) can
+  be recovered/estimated from, real-life events
+\end{itemize}
+
+\hypertarget{possible-applications-case-studies}{%
+\subsubsection{Possible Applications / Case
+Studies}\label{possible-applications-case-studies}}
+
+\begin{itemize}
+\tightlist
+\item
+  Climate movement in Germany 2019 \& change in MIP
+\item
+  Adoption of Covid-19 social norms
+\item
+  Shock induced public opinion changes: Fukushima, Brexit, Charlie
+  Hebdo, Cologne New Year (2015) / Berlin New Year (2021), AfD 2015
+\item
+  Fashion changes \& trend diffusion
+\item
+  Use of language (contemporary words, gender neutral expressions)
+\end{itemize}
+
+\hypertarget{model-variations-adjustments}{%
+\subsubsection{Model Variations /
+Adjustments}\label{model-variations-adjustments}}
+
+\begin{itemize}
+\tightlist
+\item
+  Repeated exposure thresholds before contagion (analogous to mass
+  opinion formation)
+\item
+  Adoption vs.~immunity vs.~recovery, reinfections
+\item
+  Spatial or network-based transmission vs.~social clusters
+\end{itemize}
+
+\footnotesize
+
+  \bibliography{../../../Literatur/bibtex/library.bib}
+
+\end{document}
